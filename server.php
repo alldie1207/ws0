@@ -36,7 +36,7 @@ class MyWs{
 		$re->nama='budi';
 		$re->npm='44445';
 		$re->agama='islam';
-						
+		$re->kelahiran='21';
 		return $re;		
 	}
 	
@@ -47,6 +47,20 @@ class MyWs{
 		
 		return 'selamat Anda telah terdaftar: '.$nama.' dan jml sks='.$sks;
 	}
+
+	function setInfo($data){
+		$nama=$data->nama;
+		$npm=$data->npm;
+		$kelahiran=$data->kelahiran;
+	
+		if (kelahiran < 20){
+			return 'selamat umur anda cukup';
+		}else{
+			return 'umur  anda tidak cukup';
+		}
+		return 'selamat Anda telah terdaftar:  dan jml sks='.$kelahiran;
+	}
+	
 	
 }
 	

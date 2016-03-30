@@ -45,6 +45,12 @@ echo '<p>';
 echo $client2->setMhs($data);
 echo '</p>';
 
+//eksekusi servis ke-6
+$data=array('nama'=>'Iwan','npm'=>'45676','kelahiran'=>21);
+echo '<p>';
+echo $client2->setInfo($data);
+echo '</p>';
+
 //echo '<br>'.'--------------------'.'<br>';
 //var_dump($client2->__getLastResponse());
 echo '<br>'.'--------------------'.'<br>';
